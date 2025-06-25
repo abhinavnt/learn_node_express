@@ -1,7 +1,7 @@
-const {parentPort,workerData}=require('worker_threads')
+const { parentPort, workerData } = require("worker_threads");
 
-console.log('Worker thread: Started with data', workerData);
+console.log("Worker thread: Started with data", workerData);
 
-const result=workerData*2
+const result = workerData * 2;
 
-parentPort.postMessage(result)
+parentPort.postMessage(result);
